@@ -1,0 +1,15 @@
+
+  <body>
+    <p>There are <b><u> <%=  Contact.count %> </u></b> contacts</p>
+     <% Contact.all.each do |contact| %>
+    <p><%=contact.first_name%> <%=contact.last_name%> <%=contact.email%> </p>
+    <a href="#">Edit</a> | <a href="#">Delete</a>
+    <% end %>
+
+
+    <br></br>
+
+      <a href="http://localhost:4567/contacts">Contacts</a>
+      <a href="http://localhost:4567/">Home Page</a>
+
+  </body>
