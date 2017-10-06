@@ -1,15 +1,33 @@
 
   <body>
-    <p>There are <b><u> <%=  Contact.count %> </u></b> contacts</p>
-     <% Contact.all.each do |contact| %>
-    <p><%=contact.first_name%> <%=contact.last_name%> <%=contact.email%> </p>
-    <a href="#">Edit</a> | <a href="#">Delete</a>
-    <% end %>
+
+
+
+    <div class="number_of_contacts">
+      <p>There are <span> <%=  Contact.count %> </span> contacts</p>
+    </div>
+
+    <div class="info_of_contacts">
+
+
+       <% Contact.all.each do |contact| %>
+
+
+           <p><%=contact.first_name%> <%=contact.last_name%> <%=contact.email%> </p>
+           <a href="#">Edit</a> | <a href="#">Delete</a>
+
+
+      <% end %>
+
+    </div>
+
 
 
     <br></br>
 
       <a href="http://localhost:4567/contacts">Contacts</a>
+      <br></br>
       <a href="http://localhost:4567/">Home Page</a>
 
   </body>
+HOME PAGE

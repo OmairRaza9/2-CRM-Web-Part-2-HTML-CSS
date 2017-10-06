@@ -1,0 +1,38 @@
+
+/* header */
+header h1 {
+  background-color: rgb(51, 51, 51);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+header li {
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  color: rgb(255, 255, 255);
+  font-size: 1.75em;
+  margin: 1px;
+}
+.number_of_contacts span{
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: RGB(100, 226,209);
+  align-items: center;
+}
+.number_of_contacts {
+  background-color: rgb(240, 126, 108);
+  padding: 2px;
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 80%;
+}
+  .info_of_contacts {
+    background-color: RGB(100, 226,209);
+    margin: 1px;
+  }
+
+  footer {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    text-align: center;
+padding: 1px; }
