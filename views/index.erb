@@ -4,7 +4,7 @@
 
 
     <div class="number_of_contacts">
-      <p>There are <span> <%=  Contact.count %> </span> contacts</p>
+      <p>There are <span><%= Contact.count%></span> contacts</p>
     </div>
 
     <div class="info_of_contacts">
@@ -12,10 +12,10 @@
 
        <% Contact.all.each do |contact| %>
 
-
-           <p><%=contact.first_name%> <%=contact.last_name%> <%=contact.email%> </p>
-           <a href="#">Edit</a> | <a href="#">Delete</a>
-
+        <div class="contact_info">
+         <h2><%=contact.first_name%> <%=contact.last_name%> <%=contact.email%> </h2>
+         <a href="#">Edit</a> | <a href="#">Delete</a>
+        </div>
 
       <% end %>
 

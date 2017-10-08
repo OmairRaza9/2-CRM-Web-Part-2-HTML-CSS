@@ -12,6 +12,14 @@ get '/contacts' do
   erb :contacts
 end
 
+get '/contacts/:id' do
+
+  'Hello!'
+  # instructions for how to handle requests to this route will go here
+  #  erb :show_contact
+end
+
+
 
 after do
   ActiveRecord::Base.connection.close
