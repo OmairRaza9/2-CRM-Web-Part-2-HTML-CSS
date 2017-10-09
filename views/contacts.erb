@@ -1,16 +1,11 @@
   <body>
 
       <%  @contacts.each do |contact|%>
-
-
-
-      <ul>
-        <li> Name = <%= contact.full_name %> </li>
-        <li> Email = <%= contact.email %> </li>
-      </ul>
+        <ul>
+          <li> Name = <%= contact.full_name %> </li>
+          <li> Email = <%= contact.email %> </li>
+        </ul>
       <% end %>
-
-
 
     <a href="http://localhost:4567/">Go Back to the Homepage</a>
 

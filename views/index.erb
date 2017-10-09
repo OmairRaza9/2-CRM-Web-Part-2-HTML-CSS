@@ -12,9 +12,12 @@
 
        <% Contact.all.each do |contact| %>
 
+
         <div class="contact_info">
-         <h2><%=contact.first_name%> <%=contact.last_name%> <%=contact.email%> </h2>
-         <a href="#">Edit</a> | <a href="#">Delete</a>
+          <a href="/contacts/<%=contact.id%>">
+            <h2><%=contact.first_name%> <%=contact.last_name%> <%=contact.email%> </h2>
+          </a>
+          <a href="#">Edit</a> | <a href="#">Delete</a>
         </div>
 
       <% end %>
